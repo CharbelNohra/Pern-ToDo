@@ -45,8 +45,10 @@ function EditToDo({ todo }) {
                                 class="close"
                                 data-dismiss="modal"
                                 onClick={() => setDescription(todo.description)}
+                                aria-label="Close"
+                                className="btn btn-danger btn-sm float-right mr-2 mt-1"
                             >
-                                &times;
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
 
@@ -68,8 +70,6 @@ function EditToDo({ todo }) {
                             >
                                 Edit
                             </button>
-                        </div>
-                        <div class="modal-footer">
                             <button
                                 type="button"
                                 class="btn btn-danger"
